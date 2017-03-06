@@ -1,0 +1,8 @@
+{% for test in all_tests %}
+	<ul>
+		<li>First name: {{ test.patient.first_name }}</li>
+		<li>Last name: {{ test.patient.last_name }}</li>
+		<li>Test type: {{ test.lab_test }}</li>
+		<li>Results: {{ test.results }}</li>
+	</ul>
+{% endfor %}
